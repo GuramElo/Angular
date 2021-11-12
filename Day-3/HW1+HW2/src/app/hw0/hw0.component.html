@@ -1,0 +1,60 @@
+<form [formGroup]="form">
+
+
+
+ <div>   <span class="redDot">*</span> E-mail:  </div> 
+  <section>
+       <input type="email" formControlName="in1">
+    </section>
+
+
+
+
+    <div> <span class="redDot">*</span> Password:   </div> 
+    <section>
+         <input class="net" type="password" formControlName="in2">
+    </section>
+
+
+
+
+    <div> <span class="redDot">*</span> Confirm Password:   </div> 
+    <section>
+         <input type="password" formControlName="in3">
+    </section>
+
+
+
+
+    <div> <span class="redDot">*</span> Nickname:   </div> 
+     <section>
+         <input type="text" formControlName="in4">
+    </section>
+
+
+
+
+    <div>   <span class="redDot">*</span> Phone Number:   </div> 
+    <section>
+         <input type="tel" formControlName="in5">
+    </section>
+
+
+
+    <div>  <span class="redDot">*</span> Website:   </div> 
+    <section> 
+        <input type="url" placeholder="website" formControlName="in6">
+    </section>
+
+
+
+<div>
+      <input type="checkbox" formControlName="in7" id="spec"> I have read the <span style="color:royalblue">agreement</span>
+</div>
+
+<button type="submit" disabled="true" (click)="userEmit()">Register</button>
+
+
+</form>
+
+<!--<button (click)="userEmit()">Register</button>-->
