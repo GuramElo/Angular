@@ -1,0 +1,80 @@
+//form > section > .net.net.net{
+//    border-color: hotpink;
+//}
+//(<HTMLSelectElement>document.querySelector("#spec"))
+//#exceptionFpasses{
+//    border-color:lightgray;
+//}
+.ng-invalid.ng-touched.ng-invalid.ng-touched.ng-invalid.ng-touched{
+    border-color: red;
+}
+body{
+    margin:0;
+    padding: 0;
+    position: relative;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+form{
+    position: absolute;
+    width:100%;
+    transform: translateX(-12%);
+}
+form > div, form > section{
+    
+    display: inline-block;
+    width:auto;
+ 
+}
+@for $i from 1 through 13{
+
+form>section:nth-child(#{$i}){
+    position: absolute;
+    top:#{(50*$i)-50+"px"};
+    transform: translateY(-18%);
+   // background-color: green;
+    z-index: -1;
+left:50.3%;
+&>input{
+    border: lightgray solid 1px;
+    width:350px;
+    height:25px;
+    border-radius: 3px;
+}
+
+}
+
+form>div:nth-child(#{$i}){
+ &::first-letter{
+     color:red;
+ }
+
+    position: absolute;
+    //background-color: green;
+    top:#{(50*$i)+"px"};
+    right:50%;
+}
+@if $i==13{
+    form>div:nth-child(13){
+        transform: translateX(+100%);
+    }
+    form>button{
+        color:white;
+    box-sizing: content-box;
+     border-width: 0;
+     background-color: royalblue;
+     width:60px;
+     height:30px;
+     border-radius: 5px;   
+    position: absolute;
+    //background-color: green;
+    top:#{(50*$i+50)+"px"};
+    right:50%;
+    transform: translateX(+100%);
+    }
+}
+
+
+}
