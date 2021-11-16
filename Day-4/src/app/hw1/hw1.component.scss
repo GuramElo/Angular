@@ -1,0 +1,146 @@
+#cur1{
+    //font-size: larger;
+    //font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    top:4%;
+    left:20%;
+    transform: translateX(-50%);
+    width:70px;
+    height:30px;
+    border-radius: 4px;
+    //@extend #valueInput2
+}
+#cur1Label{
+    position: absolute;
+    top:1%;
+    left:20%;
+    font-size: larger;
+    font-weight: bold;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#cur2Label{
+    position: absolute;
+    top:1%;
+    left:80%;
+    transform: translateX(-50%);
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+#cur2{
+    font-size: 15px;
+    //font-weight: bold;
+    text-align: center;
+    width:70px;
+    height:30px;
+    border-radius: 4px;
+    position: absolute;
+    top:4%;
+    left:80%;
+    transform: translateX(-50%);
+//@extend #valueInput2
+}
+#valueInput1{
+@extend #cur1;
+    top:10%;
+    //width:100px;
+    width: auto;
+}
+
+#valueInput2{
+    @extend #cur2;
+top:10%;
+//width:100px;
+width:auto;
+}
+#txt1{
+    @extend #cur1;
+    top:20%;
+    font-size: larger;
+    font-weight: bolder;
+    width:auto;
+}
+
+#txt2{
+    @extend #cur2;
+    top:20%;
+    font-size: larger;
+    font-weight: bolder;
+    width:auto;
+}
+button{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+        position: absolute;
+        left:50%;
+        top:20%;
+        transform: translateX(-50%);
+        //border:none;
+        background: none;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bolder;
+ background-color: red;   
+}
+#SumCurs{
+    width:100%;
+    height:70%;
+    position: absolute;
+    bottom: 0%;
+    left:0%;
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    &>div{
+        //width:70px;
+        width:auto;
+        height: 30px;
+        //border-radius: 4px;
+        align-self: center;
+        box-sizing: border-box;
+        &>input{
+            height:100%;
+            width:50%;
+        }
+        &>span{
+            display: inline-block;
+           // box-sizing: content-box;
+           margin-right: 5px;
+            height:100%;
+            width:15%;
+            text-align: left;
+            //background-color: white;
+        }
+    }
+    row-gap: 20px;
+    column-gap: 20px;
+}
+#lastFun{
+ top:5%;   
+ font-size: medium;
+}
+#lastsFun{
+    @extend #lastFun;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width:70px;
+    height:30px;
+    top:0%;
+}
+#summs{
+    position: absolute;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    left:50%;
+    transform: translateX(-50%);
+    top:16%;
+}

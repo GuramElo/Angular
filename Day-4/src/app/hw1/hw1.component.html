@@ -1,0 +1,28 @@
+<label for="cur1" id="cur1Label">Currency 1</label>
+<select id="cur1" [formControl]="cur1Typ">
+<!--input from script-->
+</select>
+<label for="cur2" id="cur2Label">Currency 1</label>
+<select id="cur2" [formControl]="cur2Typ">
+    <!--input from script-->
+</select>
+<input id="valueInput1" type="number" [formControl]="cur1Val"/>
+<input id="valueInput2" type="number" [formControl]="cur2Val"/>
+<span id="txt1">€</span>
+<span id="txt2">$</span>
+<button (click)="buttArrow()">↺</button>
+<section id="SumCurs" [formGroup]="grp">
+
+<div *ngFor="let i of aso">
+<span>{{i}}</span>
+<input type="number" formControlName="ase"/>
+</div>
+    
+
+</section>
+
+<button (click)="lastFun()" id="lastFun">Add Curr</button>
+<select type="text" id="lastsFun">
+
+</select>
+<span id="summs">ჯამი</span>
