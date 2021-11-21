@@ -1,0 +1,12 @@
+.buttons{
+    position: absolute;
+    bottom:5%;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.class1,.class2{
+    display: none;
+}

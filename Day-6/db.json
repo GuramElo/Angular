@@ -1,0 +1,43 @@
+{
+  "create": [
+    {
+      "name": "guriko",
+      "salary": 1000,
+      "age": 19,
+      "id": 1
+    },
+    {
+      "name": "guriko",
+      "salary": 1000,
+      "age": 19,
+      "id": 2
+    },
+    {
+      "name": "guriko",
+      "salary": 1000,
+      "age": 19,
+      "id": 3
+    },
+    {
+      "name": "guriko",
+      "salary": 1000,
+      "age": 19,
+      "id": 4
+    }
+  ],
+  "employee": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
