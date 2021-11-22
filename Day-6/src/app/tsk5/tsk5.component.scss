@@ -1,0 +1,38 @@
+.leftArr,.rightArr{
+    font-size: 100px;
+    color:red;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.leftArr{
+    
+    right:5px;
+}
+.rightArr{
+    left:5px;
+}
+.anton{
+    position: absolute;
+    width:50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    //margin-bottom: 50px;
+    //width:fit-content;
+    border: 1px solid gray;
+    background-color: lightblue;
+    &>div{
+        margin-bottom: 20px;
+        display: flex;
+justify-content: center;
+justify-items: center;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        &>span{
+            color:red;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<form [formGroup]="form1">
+
+    <div>name: <input type="text" formControlName="name1"/></div>
+    
+    <div>salary: <input type="number" formControlName="salary1"/></div>
+    
+    <div>age: <input type="number" formControlName="age1"/></div>
+
+    <div>The id of log you want edit: <input type="number" formControlName="editId"/></div>
+    
+    <div><button (click)="editRec()">Edit log</button></div>
+    
+</form>

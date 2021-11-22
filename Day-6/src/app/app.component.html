@@ -1,6 +1,12 @@
-<app-tsk1 class='class1' ></app-tsk1>
-<app-tsk2 class='class2' ></app-tsk2>
+<app-tsk1 *ngIf='tsk.tsk1'></app-tsk1>
+<app-tsk2 *ngIf='tsk.tsk2'></app-tsk2>
+<app-tsk3 *ngIf='tsk.tsk3'></app-tsk3>  
+<app-tsk4 *ngIf='tsk.tsk4'></app-tsk4>
+<app-tsk5 *ngIf='tsk.tsk5'></app-tsk5>
 <div [ngClass]="'buttons'">
-  <button (click)="display1()">Task 1</button>
-  <button (click)="display2()">Task 2</button>
+  <button (click)="display(1)">Task 1</button>
+  <button (click)="display(2)">Task 2</button>
+  <button (click)="display(3)">Task 3</button>
+  <button (click)="display(4)">Task 4</button>
+  <button (click)="display(5)">Task 5</button>
 </div>

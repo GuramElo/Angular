@@ -19,7 +19,7 @@ public addRec():void{
       salary:(this.form.get("salary") as FormControl).value,
       age:(this.form.get("age") as FormControl).value,
      };
-    this.http.post<any>('http://localhost:4000/create', body, { headers }).subscribe(data => {
+    this.http.post<any>('http://localhost:4000/employees', body, { headers }).subscribe(data => {
     console.log(data);   
     });
 

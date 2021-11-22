@@ -5,14 +5,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  //title = 'HW';
-public display1():void{
-  (<HTMLSelectElement>document.querySelector(".class1")).style.display="initial";
-  (<HTMLSelectElement>document.querySelector(".class2")).style.display="none";
+public tsk:any={
+  tsk1:false,
+  tsk2:false,
+  tsk3:false,
+  tsk4:false,
+  tsk5:false,
 }
-public display2():void{
-  (<HTMLSelectElement>document.querySelector(".class2")).style.display="initial";
-  (<HTMLSelectElement>document.querySelector(".class1")).style.display="none";
+  
+public display(num:any):void{
+  
+  for(let i=1;i<6;i++){this.tsk[`tsk${i}`]=false;}
+
+  this.tsk[`tsk${num}`]=true;
+
 }
 
 constructor(){

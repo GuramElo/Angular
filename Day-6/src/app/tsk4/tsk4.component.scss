@@ -1,0 +1,15 @@
+.but_input_1{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 12%;
+    &>button{
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%);
+        width:fit-content;
+    }
+    &>input{
+        border:1px black solid;
+    }
+}
